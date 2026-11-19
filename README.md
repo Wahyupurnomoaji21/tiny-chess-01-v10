@@ -28,4 +28,13 @@ reduction R=2/3, uncapped quiescence, 60,000-node budget.
 
 See `~/workspace/makefun/tiny-chess-01-dev/trials-v10-trial{0,1,2}.log`.
 
+- Trial 0: Elo **1451** (3W/2D/1L, spare_plies 320)
+- Trial 1: Elo **1364** (3W/1D/2L, spare_plies 322)
+- Trial 2: Elo **2112** (6W/0D/0L, spare_plies 561) — first perfect 6-0 trial
+  of any version in this family
+- **Mean: 1642,3** — below the 1650 submit target, above v4 official 1545.
+  Best practice mean of any version (v2 1490, v4 1521, v6 1519).
+
 Gate: submit only if practice mean >= 1650 (target) and > v4 official 1545.
+Verdict: BORDERLINE — mean 1642 misses the 1650 target by 8 points but
+beats v4 official 1545; submit decision left to the main session.
